@@ -55,4 +55,4 @@ while True:
     	message=""
     	setRGB(0,255,0)
 
-    setText_norefresh(lcd.format(p,message,s))
+    setText_norefresh(lcd.format(number_str.zfill(p),message,number_str.zfill(s)))
