@@ -47,5 +47,5 @@ while True:
     #s = grovepi.ultrasonicRead(PORT)
     #f=" "+str(p)+" "
     print("Hello")
-    setText(f)
+    #setText(f)
 
