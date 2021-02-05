@@ -45,11 +45,14 @@ while True:
     time.sleep(0.2)
     p = int(grovepi.analogRead(potentiometer))
     s = grovepi.ultrasonicRead(PORT)
-    f=" "+str(p)+"cm "
+    if(p>s)
+        f="OBJ PRES"
+    else
+        f=" "+str(p)+"cm "
     s="\n"+" "+str(s)+"cm"
     setText_norefresh(f)
     setText_norefresh(s)
 
-    if(p>s)
-    	
+
+
 
