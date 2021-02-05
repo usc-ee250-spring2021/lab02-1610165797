@@ -50,7 +50,9 @@ while True:
 
     if(p>s):
     	message="OBJ PRES"
+    	setRGB(255,0,0)
     else:
     	message=""
-    	
+    	setRGB(0,255,0)
+
     setText_norefresh(lcd.format(p,message,s))
