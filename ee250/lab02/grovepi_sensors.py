@@ -48,5 +48,5 @@ while True:
     #f=" "+str(p)+" "
     print("Hello")
     #setText(f)
-    setText_norefresh(s)
+    setText_norefresh(str(s))
 
