@@ -54,8 +54,3 @@ while True:
     	message=""
 
     setText(lcd.format(p,message,s)
-
-
-
-
-
