@@ -37,13 +37,13 @@ PORT = 4
 grovepi.pinMode(potentiometer,"INPUT")
 time.sleep(1)
 
-print("Entering to while loop: ")
+print("Entering the while loop: ")
 
 while True:
     #So we do not poll the sensors too quickly which may introduce noise,
     #sleep for a reasonable time of 200ms between each iteration.
     time.sleep(0.2)
-    p = int(grovepi.analogRead(potentiometer)*3.41)
+    p = int(grovepi.analogRead(potentiometer))
     s = grovepi.ultrasonicRead(PORT)
     f=" "+str(p)+"cm "
     s="\n"+" "+str(s)+"cm"
