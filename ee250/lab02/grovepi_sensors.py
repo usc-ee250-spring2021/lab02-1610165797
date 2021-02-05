@@ -53,7 +53,7 @@ while True:
     else:
     	message=""
 
-    setText(text):(lcd.format(p,message,s))
+    setText(lcd.format(p,message,s)
 
 
 
