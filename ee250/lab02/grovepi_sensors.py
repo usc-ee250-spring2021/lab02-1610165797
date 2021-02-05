@@ -48,7 +48,7 @@ while True:
 
     lcd='{:.4}cm {}\n {:.3}cm'
 
-    if(int(p)>int(s):
+    if(int(p)>int(s)):
     	message="OBJ PRES"
     	setRGB(255,0,0)
     else:
