@@ -37,7 +37,7 @@ PORT = 4
 grovepi.pinMode(potentiometer,"INPUT")
 time.sleep(1)
 
-print("Hi")
+print("Entering to while loop: ")
 
 while True:
     #So we do not poll the sensors too quickly which may introduce noise,
