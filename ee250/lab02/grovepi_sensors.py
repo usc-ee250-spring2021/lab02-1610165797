@@ -46,7 +46,7 @@ while True:
     p = int(grovepi.analogRead(potentiometer))
     s = int(grovepi.ultrasonicRead(PORT))
 
-    lcd=' {}cm {}\n {}cm'
+    lcd='{:.4}cm {}\n {:.3}cm'
 
     if(p>s):
     	message="OBJ PRES"
