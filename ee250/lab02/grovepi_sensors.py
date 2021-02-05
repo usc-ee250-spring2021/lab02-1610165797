@@ -47,7 +47,7 @@ while True:
     s = int(grovepi.ultrasonicRead(PORT))
     if ( p > s ):
         f="OBJ PRES"
-    else
+    else:
         f=" "+str(p)+"cm "
     s="\n"+" "+str(s)+"cm"
     setText_norefresh(f)
