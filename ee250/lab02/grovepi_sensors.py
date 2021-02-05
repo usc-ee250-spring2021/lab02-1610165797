@@ -43,5 +43,7 @@ while True:
     time.sleep(0.2)
     p = int(grovepi.analogRead(potentiometer)*3.41)
   	#s = grovepi.ultrasonicRead(PORT)
-    setText(" "+str(p)+" ")
+  	f=" "+str(p)+" "
+  	print(f)
+    setText(f)
 
