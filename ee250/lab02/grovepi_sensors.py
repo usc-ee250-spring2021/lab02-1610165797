@@ -44,7 +44,7 @@ while True:
     #sleep for a reasonable time of 200ms between each iteration.
     time.sleep(0.2)
     p = int(grovepi.analogRead(potentiometer))
-    s = grovepi.ultrasonicRead(PORT)
+    s = int(grovepi.ultrasonicRead(PORT))
     if(p>s)
         f="OBJ PRES"
     else
