@@ -52,7 +52,7 @@ while True:
     	message="OBJ PRES"
     	setRGB(255,0,0)
     else:
-    	message=""
+    	message="         "
     	setRGB(0,255,0)
 
     setText_norefresh(lcd.format(p.zfill(4),message,s.zfill(3)))
