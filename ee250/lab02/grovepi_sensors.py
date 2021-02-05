@@ -43,8 +43,8 @@ while True:
     #So we do not poll the sensors too quickly which may introduce noise,
     #sleep for a reasonable time of 200ms between each iteration.
     time.sleep(0.2)
-    p = grovepi.analogRead(potentiometer)
-    s = grovepi.ultrasonicRead(PORT)
+    p = str(grovepi.analogRead(potentiometer))
+    s = str(grovepi.ultrasonicRead(PORT))
 
     lcd='{:.4}cm {}\n {:.3}cm'
 
