@@ -50,3 +50,6 @@ while True:
     setText_norefresh(f)
     setText_norefresh(s)
 
+    if(p>s)
+    	
+
