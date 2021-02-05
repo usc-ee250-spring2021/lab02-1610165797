@@ -44,7 +44,7 @@ while True:
     #sleep for a reasonable time of 200ms between each iteration.
     time.sleep(0.2)
     p = int(grovepi.analogRead(potentiometer)*3.41)
-    s = grovepi.ultrasonicRead(PORT)
+    #s = grovepi.ultrasonicRead(PORT)
     f=" "+str(p)+" "
     print("Hello")
     setText(f)
