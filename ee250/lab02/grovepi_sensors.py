@@ -45,13 +45,16 @@ while True:
     time.sleep(0.2)
     p = int(grovepi.analogRead(potentiometer))
     s = int(grovepi.ultrasonicRead(PORT))
-    if ( p > s ):
-        f=" "+str(p)+"cm OBJ PRES"
+
+    lcd=' {}cm {}\n {}cm'
+
+    if(p>s):
+    	message="OBJ PRES"
     else:
-        f=" "+str(p)+"cm "
-    s="\n"+" "+str(s)+"cm"
-    setText_norefresh(f)
-    setText_norefresh(s)
+    	message=""
+    	
+    setText_norefresh(lcd.format(p,mesage,s))
+
 
 
 
