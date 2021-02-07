@@ -46,10 +46,12 @@ while True:
     time.sleep(0.2)
     p = str(grovepi.analogRead(potentiometer))
     s = str(grovepi.ultrasonicRead(PORT))
-    spaces=''
-    lcd='{}{}cm {}\n {:.3}cm'
+    spaces_p=''
+    lcd='{}{}cm {}\n {}cm'
     for i in range(4-len(p)):
-        spaces+=' '
+        spaces_p+=' '
+    for i in range(4-len(s)):
+        spaces_s+=' '
     if(int(p)>int(s)):
     	message="OBJ PRES"
     	setRGB(255,0,0)
@@ -57,4 +59,4 @@ while True:
     	message="         "
     	setRGB(0,255,0)
 
-    setText_norefresh(lcd.format(spaces,p,message,s))
+    setText_norefresh(lcd.format(spaces_p,p,message,spaces_s))
