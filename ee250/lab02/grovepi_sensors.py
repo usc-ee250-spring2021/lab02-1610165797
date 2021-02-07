@@ -48,7 +48,7 @@ while True:
     s = str(grovepi.ultrasonicRead(PORT))
     spaces=''
     lcd='{}{:.4}cm {}\n {:.3}cm'
-    for i in range(3-int(math.log(int(p),10))):
+    for i in range(4-len(p)):
         spaces+=' '
     if(int(p)>int(s)):
     	message="OBJ PRES"
