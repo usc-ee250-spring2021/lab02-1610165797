@@ -16,6 +16,7 @@ performance. Because of this, you will not find this in the default directories.
 """
 import sys
 import time
+import math
 # By appending the folder of all the GrovePi libraries to the system path here,
 # we are successfully `import grovepi`
 sys.path.append('../../Software/Python/')
@@ -45,9 +46,10 @@ while True:
     time.sleep(0.2)
     p = str(grovepi.analogRead(potentiometer))
     s = str(grovepi.ultrasonicRead(PORT))
-
-    lcd='{:.4}cm {}\n {:.3}cm'
-
+    spaces=''
+    lcd='{}{:.4}cm {}\n {:.3}cm'
+    for i in range(3-int(math.log(int(p),10))):
+        spaces+=' '
     if(int(p)>int(s)):
     	message="OBJ PRES"
     	setRGB(255,0,0)
@@ -55,4 +57,4 @@ while True:
     	message="         "
     	setRGB(0,255,0)
 
-    setText_norefresh(lcd.format(p.zfill(4),message,s.zfill(3)))
+    setText_norefresh(lcd.format(spaces,p.zfill(4),message,s.zfill(3)))
