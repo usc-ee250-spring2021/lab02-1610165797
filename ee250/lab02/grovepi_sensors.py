@@ -47,7 +47,7 @@ while True:
     p = str(grovepi.analogRead(potentiometer))
     s = str(grovepi.ultrasonicRead(PORT))
     spaces=''
-    lcd='{}{:.4}cm {}\n {:.3}cm'
+    lcd='{}{}cm {}\n {:.3}cm'
     for i in range(4-len(p)):
         spaces+=' '
     if(int(p)>int(s)):
