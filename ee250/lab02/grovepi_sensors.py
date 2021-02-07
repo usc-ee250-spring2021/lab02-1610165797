@@ -48,7 +48,7 @@ while True:
     s = str(grovepi.ultrasonicRead(PORT))
     spaces_p=''
     spaces_s=''
-    lcd='{}{}cm {}\n {}cm'
+    lcd='{}{}cm {}\n{}{}cm'
     for i in range(4-len(p)):
         spaces_p+=' '
     for i in range(4-len(s)):
