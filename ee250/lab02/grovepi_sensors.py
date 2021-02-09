@@ -62,4 +62,5 @@ while True:
 
     setText_norefresh(lcd.format(spaces_p,p,message,spaces_s,s))
 
-    #https://github.com/usc-ee250-spring2021/lab02-1610165797/tree/lab02/ee250/lab02
+
+#https://github.com/usc-ee250-spring2021/lab02-1610165797/tree/lab02/ee250/lab02

@@ -20,5 +20,5 @@ The UltrasonicRead function has a built-in delay, which calls the function "time
 
 It is using a I2C communication protocol.
 
-Link to demo video:
+Link to video; Please download the video if you are to access it since google drive displays it in a low resolution online, which happens to be blurry and overexposed:
 https://drive.google.com/file/d/1SGMDYmHEbPHXlFYXT4pBWbSa2kGxlq-i/view?usp=sharing
