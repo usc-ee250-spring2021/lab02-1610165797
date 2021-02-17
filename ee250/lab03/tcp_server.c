@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     /* 4. What are the input parameters and return value of socket()
-     *
+     * 
      */
     
     if (sockfd < 0) 
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
              sizeof(serv_addr)) < 0) 
              error("ERROR on binding");
     /* 5. What are the input parameters of bind() and listen()?
-     *
+     * 
      */
     
     listen(sockfd,5);
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 	n = read(newsockfd,buffer,255);
         if (n < 0) 
             error("ERROR reading from socket");
-        //printf("Here is the message: %s\n",buffer);
+        printf("Here is the message: %s\n",buffer);
         n = write(newsockfd,"I got your message",18);
         if (n < 0) 
             error("ERROR writing to socket");
